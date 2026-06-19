@@ -1,6 +1,11 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 
-app = Flask(__name__)
+# Konfigurasi template folder (mengacu ke folder templates di luar direktori saat ini)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+template_folder = os.path.join(current_dir, '../templates')
+
+app = Flask(__name__, template_folder=template_folder)
 app.secret_key = 'kunci_rahasia_sim_2026'
 
 # Simulasi Database Akun di Memory
