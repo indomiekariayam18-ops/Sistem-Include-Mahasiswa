@@ -1,2 +1,2 @@
 # sistem-include-mahasiswa
-Website Manajemen Data Mahasiswa
+website manajemen data mahasiswa
